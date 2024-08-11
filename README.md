@@ -26,7 +26,7 @@ A JavaBean is a Java class that follows the following conventions:-
 
 3. `It should have public no-arg constructor or default constructor.`
 
-- A "Java Bean Object" is an instance of Java Bean Class.
+- A **Java Bean Object** is an instance of **Java Bean Class.**
 - It is a reusable, encapsulated Java component with properties, getters, and setters, designed for easy integration and manipulation.  
 
 # Loading Bean Definitions:

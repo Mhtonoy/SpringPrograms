@@ -41,3 +41,81 @@ A JavaBean is a Java class that follows the following conventions:-
 # Bean Initialization
 - Once the bean is instantiated, Spring proceeds to configure and initialize it.
 - Property values are set using *setters, constructor arguments or field injection*, populating the bean's state.
+
+# Dependency Injection (DI)
+- Dependency Injection is a **design pattern** used in the Spring Framework to achive **Inversion of Control**.
+    - Design patterns are like pre-tested and proven blueprints for solving common software problems.
+    - They help developers write cleaner, more organized code by following established patterns for various tasks.
+    - For example:
+        1. Singleton Pattern
+        2. Factory Method Pattern
+        3. DAO Design Pattern
+        4. MVC Design Pattern
+
+- It's main task is to **inject** the **dependency**, means *inject one object into another object.*
+
+- It is used to achieve **Loose Coupling** in java.
+
+  - `Hard Coding` in java means directly putting specific  values (i.e numbers or Strings) in your code rather than using *variables or external configuration*. This can make your code less adaptable and more challenging to *change later.*
+
+      For Example:
+
+      ```Java
+      public class Calculator{
+         public int add(){
+            int result = 5+3; //Hard-coded values
+            return result;
+         }
+      }
+      ```
+   -  `Tightly Coupled Classes` Tightly coupled classes have a strong dependency, where one class directly depends on another.
+
+      For Example:
+
+      ```java
+         class Engine {
+            public void start() {
+               // Start the engine
+            }
+         }
+         public class Car {
+            private Engine engine;
+            public Car() {
+               engine = new Engine() // Tightly coupled to Engine class
+            }
+            public void start(){
+               engine.start();
+            }
+         }
+      ```
+   -  `Loosely Coupled Classes` Loosely coupled classes minimize dependencies and make the code more maintainable and flexible.
+
+      For Example:
+
+      ```java
+         public interface Engine() {
+            void start();
+         }
+         public class ElectricEngine implements Engine {
+            public void start() {
+               // Start the engine
+            }
+         }
+         public class PetrolEngine implements Engine {
+            public void start() {
+               // Start the engine
+            }
+         }
+         public class Car {
+            private Engine engine;
+            public Car(Engine engine) {
+               this.engine = engine; // Loosely coupled to Engine class
+            }
+            public void start(){
+               engine.start();
+            }
+         }
+         ```
+- We can achive **DI** by two ways:
+    1. Setter Method DI
+    2. Constructor DI

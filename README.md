@@ -119,3 +119,13 @@ A JavaBean is a Java class that follows the following conventions:-
 - We can achive **DI** by two ways:
     1. Setter Method DI
     2. Constructor DI
+
+# Setter Method Dependency Injection
+1. Dependencies are injected into a class through setter methods
+2. Setter methods DI is more readable
+3. Setter methods DI is more flexible
+
+# Constructor Dependency Injection
+1. Dependencies are injected into class through constructor. 
+2. Constructor DI is less readable.
+3. Constructor DI is less flexible.

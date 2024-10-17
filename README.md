@@ -1,3 +1,20 @@
+# Pojo (Plain Old Java Object) Class
+A simple Java class with fields and getters/setters, used for data representation without framework dependencies.
+
+# JavaBean Class
+A serializable class with a no-argument constructor, often used to encapsulate data and adhere to JavaBeans conventions for easy integration with frameworks.
+
+   - ## Properties of JavaBean class
+      A JavaBean class is a Java class that follows the following conventions:-
+      1. `It should have private properties`
+
+      2. `It should have public getter and setter methods to get and set the property values.`
+
+      3. `It should have public no-arg constructor or default constructor.`
+
+      - A **Java Bean Object** is an instance of **Java Bean Class.**
+      - It is a reusable, encapsulated Java component with properties, getters, and setters, designed for easy integration and manipulation.
+
 In normal projects we have to download the **jar** files manually. But when we create **MAVEN** project, we provide **dependencies**, through which **jar** files are automatically downloaded. We don't need to download the jar files manually and add them in project.
 
 The required **jar** files are:
@@ -17,17 +34,6 @@ All required jar files are available at [**springjars**](springjars) folder.
 5. Transaction Management
 6. Integration with other technologies
 7. Security
-
-# Properties of JavaBean class
-A JavaBean is a Java class that follows the following conventions:-
-1. `It should have private properties`
-
-2. `It should have public getter and setter methods to get and set the property values.`
-
-3. `It should have public no-arg constructor or default constructor.`
-
-- A **Java Bean Object** is an instance of **Java Bean Class.**
-- It is a reusable, encapsulated Java component with properties, getters, and setters, designed for easy integration and manipulation.  
 
 # Loading Bean Definitions:
 - Spring loads bean definitions from various resources, such as *XML configuration files, Java-based configuration classes or component scanning*.

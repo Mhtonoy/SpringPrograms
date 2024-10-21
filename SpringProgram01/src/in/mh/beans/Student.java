@@ -29,6 +29,5 @@ public class Student {
 		System.out.println("Name	: " + name);
 		System.out.println("Roll no	: " + rollno);
 		System.out.println("Email	: " + email);
-		System.out.println();
 	}
 }

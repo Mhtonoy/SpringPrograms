@@ -49,7 +49,7 @@ public class SpringConfigFile {
  *3. When the Spring Container initializes, it will invoke stdId1() method to create the Student Object.
  *4. The method annotated with @Bean will:
  *			--> Create a new Student object.
- *			--> Configure the Student object setting its properties using setxxx methods.
+ *			--> Configure the Student object setting its properties using setXXX methods.
  *			--> The default bean name for this method will be "stdId1" which is same as the method name.
  *			--> Return the configured Student object.
  */

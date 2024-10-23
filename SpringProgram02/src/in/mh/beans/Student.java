@@ -21,15 +21,16 @@ public class Student {
 	}
 	
 	public void setEmail(String email) {
-		System.out.println("setEmail() method invoked.\n");
+		System.out.println("setEmail() method invoked.");
 		this.email = email;
+		
+		System.out.println();
 	}
 	
 	public void display() {
 		System.out.println("Name	: " + name);
 		System.out.println("Roll no	: " + rollno);
 		System.out.println("Email	: " + email);
-		System.out.println();
 	}
 
 }

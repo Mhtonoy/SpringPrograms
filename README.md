@@ -26,6 +26,9 @@ The required **jar** files are:
    
 All required jar files are available at [**springjars**](springjars) folder.
 
+# Spring Container
+Spring container is the core component of **Spring Framework**.
+
 # Spring Container Responsibilities
 1. Bean Lifecycle Management
 2. Dependency Injection
@@ -36,8 +39,37 @@ All required jar files are available at [**springjars**](springjars) folder.
 7. Security
 
 # Loading Bean Definitions:
-- Spring loads bean definitions from various resources, such as *XML configuration files, Java-based configuration classes or component scanning*.
-- These bean definitions contain information about the bean class, dependencies, and other configuration details.
+- Spring loads bean definitions from various resources, such as *XML configuration files, Java-based configuration classes or component scanning*. These bean definitions contain information about the bean class, dependencies, and other configuration details.
+
+   ## XML-based Configuration
+   -  In XML-based configuration, we use `<bean>` tag to define beans.
+   -  In XML-based configuration, we provide an `id` attribute to specify the `class` name using the class attribute.
+   
+      Example: [**SpringProgram01**](SpringProgram01/src/)
+   
+   ## Java Based Configuration
+   -  In Java-based `@Configuration` is used to indicate that the class is spring configuration class.It means that annotated Java class contains *bean definitions and configuration settings* for the **Spring Application Context**.
+   -  In Java-based configuration, we use methods annotated with `@Bean` to define beans. This annotation *declares a method as a factory for creating and configuring a bean managed by the **Spring Container***.
+   
+      -  The method annotated with `@Bean` will:
+         1. Create a new object.
+         2. Configure the object, setting its properties using setxxx methods.
+         3. The default bean name for this method will be the same as method name.
+         4. Return the configured object.
+   
+   - In Java configuration, the **method name** becomes the *default bean name*, and the **return type** of the method *determines the class of the object that will be created as the bean*.
+
+   ## Anotation Based Configuration
+   The `@Component` annotation in Spring is used to *declare a class as a Spring Bean*, which is a managed component in the *Spring Application Context*. It helps Spring automatically detect and manage these beans during application startup, making	them available for **dependency injection** and other Spring features. It is also known as **stereotype annotation**.
+   - Some commonly used annotations that are based on `@Component` are:
+      1. `@Service`
+      2. `@Repository`
+      3. `@Controller` etc 
+
+   In a Spring **XML Configuration file**, `<context:component-scan>` is used to *instruct the Spring framework to perform component scanning*. It scans specified packages in the application's classpath for classes annotated with annotations like `@Component`, `@Service`, `@Repository`, and `@Controller`. These discovered classes are then registered as Spring beans, enabling automatic dependency injection and other Spring features.
+
+   The `@Value` annotation in Spring is used to *inject values into Spring bean fields or methods*. `@Value`
+   is mostly used to inject values from external resources (e.g., properties files or environment variables).
 
 # Bean Instantiation
 - After bean definitions are loaded, the Spring container creates *instances of beans* based on these definitions.
@@ -45,7 +77,7 @@ All required jar files are available at [**springjars**](springjars) folder.
 - The newly created bean instance is now ready for configuration and initialization.
 
 # Bean Initialization
-- Once the bean is instantiated, Spring proceeds to configure and initialize it.
+- Once the bean is instantiated, *Spring proceeds to configure and initialize it*.
 - Property values are set using *setters, constructor arguments or field injection*, populating the bean's state.
 
 # Dependency Injection (DI)

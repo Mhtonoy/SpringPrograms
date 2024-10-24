@@ -13,5 +13,6 @@ public class Main {
 		
 		Student std = (Student) context.getBean("student");
 		std.display();
+		
 	}
 }

@@ -16,7 +16,7 @@ public class Student {
 	private float marks;
 	
 	public Student() {
-		System.out.println("Student object created.");
+		System.out.println("Student object created through no argument constructor.");
 	}
 	
 	public void setName(String name) {

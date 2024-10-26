@@ -12,7 +12,7 @@ public class Main {
 		
 		ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfigFile.class);
 		
-		Student std1 = (Student) context.getBean("student");
+		Student std1 = (Student) context.getBean("student"); // "student" is the name of the POJO class "Student.java" 
 		std1.display();
 		
 		Student std2 = (Student) context.getBean(Student.class);

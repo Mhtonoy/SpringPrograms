@@ -7,7 +7,7 @@ public class Address {
 	private int pincode;
 	
 	public Address() {
-		System.out.println("Address object created.");
+		System.out.println("Address object created through no-argument constructor.");
 	}
 	
 	public void setHouseNumber(int houseNumber) {
@@ -19,8 +19,9 @@ public class Address {
 		this.city = city;
 	}
 	public void setPincode(int pincode) {
-		System.out.println("setPincode() method of Address object invoked.\n");
+		System.out.println("setPincode() method of Address object invoked.");
 		this.pincode = pincode;
+		System.out.println();
 	}
 	@Override
 	public String toString() {

@@ -22,5 +22,7 @@
     	<property name = "rollno" value="102"/>
     	<property name = "address" ref="addrId"/>
     </bean>
+    
+    <!-- address object has created only once and, "stdId1" and "stdId2" has invoked the same address object.  -->
    
 </beans>

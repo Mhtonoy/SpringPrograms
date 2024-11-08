@@ -14,6 +14,8 @@ public class Main {
 		Student std1 = (Student) context.getBean("stdId1");
 		std1.display();
 		
+		System.out.println();
+		
 		Student std2 = (Student) context.getBean("stdId2");
 		std2.display();
 	}

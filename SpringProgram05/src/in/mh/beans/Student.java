@@ -8,7 +8,7 @@ public class Student {
 	private Address address;
 	
 	public Student() {
-		System.out.println("Student object created.");
+		System.out.println("Student object created through no-argument constructor.");
 	}
 	
 	public void setName(String name) {
@@ -22,15 +22,16 @@ public class Student {
 	}
 	
 	public void setAddress(Address address) {
-		System.out.println("setAddress() method of Student object invoked.\n");
+		System.out.println("setAddress() method of Student object invoked.");
 		this.address = address;
+		System.out.println();
 	}
 	
 	public void display() {
 		System.out.println("Name	: " + name);
 		System.out.println("Roll no	: " + rollno);
 		System.out.println(address.toString());
-		System.out.println();
+
 	}
 	
 }

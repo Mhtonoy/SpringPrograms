@@ -8,7 +8,7 @@ public class Student {
 	private Address address;
 	
 	public Student(String name, int rollno, Address address) {
-		//super();
+		super();
 		System.out.println("Student object constructor invoked.\n");
 		this.name = name;
 		this.rollno = rollno;

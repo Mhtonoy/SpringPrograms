@@ -41,5 +41,5 @@ public class SpringConfigFile {
  *
  *	@Bean in Spring marks a method to produce a bean object which is managed by the Spring Container.
  *
- *	If **@Bean** is not mentioned then object will not be created.
+ *	If @Bean is not mentioned then object will not be created.
  */

@@ -8,7 +8,7 @@ public class Student {
 	private Address address;
 	
 	public Student() {
-		System.out.println("Student object created.");
+		System.out.println("Student object created through constructor.");
 	}
 	
 	public void setName(String name) {

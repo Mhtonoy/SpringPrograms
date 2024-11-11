@@ -7,7 +7,7 @@ public class Address {
 	private int pinCode;
 	
 	public Address() {
-		System.out.println("Address object created.");
+		System.out.println("Address object created through constructor.");
 	}
 	
 	public void setHouseNumber(int houseNumber) {

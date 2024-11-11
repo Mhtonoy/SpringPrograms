@@ -4,7 +4,7 @@
 
 -	`AnnotationConfigApplicationContext` is a Spring class for programmatic configuration, using annotations like `@Configuration` and `@Bean`. It initializes the application context, managing beans defined in annotated classes.
 
--	`@Configuration` in Spring marks a *class as providing bean definitions for the application context*, enabling Java-based configuration.
+-	`@Configuration` in Spring marks a class as *providing bean definitions for the application context*, enabling Java-based configuration.
 
 -	`@Bean` in Spring marks *a method to produce a bean object which is managed by the Spring Container*.
 

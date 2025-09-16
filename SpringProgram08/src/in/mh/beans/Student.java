@@ -8,6 +8,7 @@ public class Student
 	
 	public Student(int rollno, String name, Address address) {
 		super();
+		System.out.println("Student object constructor");
 		this.rollno = rollno;
 		this.name = name;
 		this.address = address;

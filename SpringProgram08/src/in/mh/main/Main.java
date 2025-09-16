@@ -14,6 +14,7 @@ public class Main
 		
 		Student std = context.getBean(Student.class);
 		std.Display();
+		System.out.println(std.toString());
 	}
 
 }

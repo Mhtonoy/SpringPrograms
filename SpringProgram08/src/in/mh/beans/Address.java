@@ -8,6 +8,7 @@ public class Address
 	
 	public Address(int houseno, String city, int pincode) {
 		super();
+		System.out.println("Address object constructor");
 		this.houseno = houseno;
 		this.city = city;
 		this.pincode = pincode;

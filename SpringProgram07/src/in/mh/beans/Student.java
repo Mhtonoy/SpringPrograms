@@ -34,13 +34,6 @@ public class Student {
 		System.out.println("Roll no: " + rollno);
 		System.out.println("Address: " + address.toString());
 	}
-
-	@Override
-	public String toString() {
-		return "Name = " + name + "\nRoll no= " + rollno + "\nAddress= " + address + "]";
-	}
-	
-	
 	
 }
 

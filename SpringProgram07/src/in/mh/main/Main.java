@@ -15,10 +15,12 @@ public class Main {
 		
 		Student std1 = (Student) context.getBean(Student.class);
 		std1.display();
+		System.out.println(std1.toString());
 		
 		System.out.println();
 		
 		Student std2 = (Student) context.getBean(Student.class);
+		std2.display();
 		System.out.println(std2.toString());
 	}
 }

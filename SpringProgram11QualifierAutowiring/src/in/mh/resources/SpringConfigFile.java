@@ -39,7 +39,7 @@ public class SpringConfigFile
 	public Student createStudentObject()
 	{
 		Student std = new Student();
-//		std.setAddress(createAddressObject());  // manual dependency injection
+//		std.setAddress(createAddressObject1());  // manual dependency injection
 		std.setName("Mozammal");
 		std.setRollno(1001);
 //		std.setSubjects(createSubjectObject()); // manual dependency injection

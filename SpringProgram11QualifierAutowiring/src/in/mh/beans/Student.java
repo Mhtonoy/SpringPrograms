@@ -21,16 +21,20 @@ public class Student
 	}
 	
 	public void setName(String name) {
+		System.out.println("setName() method invoked.");
 		this.name = name;
 	}
 	public void setRollno(int rollno) {
+		System.out.println("setRollno() method invoked.");
 		this.rollno = rollno;
 	}
 	public void setAddress(Address address) {
+		System.out.println("setAddress() method invoked.");
 		this.address = address;
 	}
 	
 	public void setSubjects(Subjects subjects) {
+		System.out.println("setSubjects() method invoked.");
 		this.subjects = subjects;
 	}
 

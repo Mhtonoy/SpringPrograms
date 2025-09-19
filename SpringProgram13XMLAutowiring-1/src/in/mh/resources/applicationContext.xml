@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class = "in.mh.beans.Student" id = "stdId" autowire="byType">
+    	<property name = "name" value = "Tonoy"/> 
+    	<property name = "rollno" value = "101"/>
+    	<!-- <property name = "address" ref = "addrId1"/> -->
+    </bean>
+    
+    <bean class = "in.mh.beans.Address" id = "addrId1" autowire-candidate="false">
+    	<property name = "houseno" value = "1096"/> 
+    	<property name = "city" value = "Cumilla"/>
+    	<property name = "pincode" value = "3500"/> 
+    </bean>
+    
+    <bean class = "in.mh.beans.Address" id = "address">
+    	<property name = "city" value = "Dhaka"/>
+    	<property name = "pincode" value = "1200"/> 
+    	<property name = "houseno" value = "1078"/> 
+    </bean>
+    
+</beans>

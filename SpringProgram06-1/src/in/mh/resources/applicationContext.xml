@@ -6,23 +6,21 @@
 
     <!-- bean definitions here -->
     <bean class="in.mh.beans.Student" id="stdId1">
-    	<property name = "name" value="Tonoy"/>
-    	<property name = "rollno" value="101"/>
-    	<property name = "address" ref="addrId"/>
+    	<constructor-arg value="Tonoy"/>
+    	<constructor-arg value="107"/>
+    	<constructor-arg ref="addrId"/>
     </bean>
     
     <bean class="in.mh.beans.Address" id="addrId">
-    	<property name = "houseNumber" value="1096"/>
-    	<property name = "city" value="Cumilla"/>
-    	<property name = "pincode" value="3500"/>
+    	<constructor-arg value="1096"/>
+    	<constructor-arg value="Cumilla"/>
+    	<constructor-arg value="3500"/>
     </bean>
     
     <bean class="in.mh.beans.Student" id="stdId2">
-    	<property name = "name" value="Mozammal"/>
-    	<property name = "rollno" value="102"/>
-    	<property name = "address" ref="addrId"/>
+    	<constructor-arg value="Mozammal"/>
+    	<constructor-arg value="101"/>
+    	<constructor-arg ref="addrId"/>
     </bean>
-    
-    <!-- address object has created only once and, "stdId1" and "stdId2" has invoked the same address object.  -->
    
 </beans>
